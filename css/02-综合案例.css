@@ -1,0 +1,45 @@
+body {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+
+h1 {
+    /* 文字不加粗 */
+    font-weight: 400;
+    /* 水平居中 */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gray {
+    color: #888888;
+    font-size: 12px;
+    text-align: center;
+}
+
+.search {
+    color: #666
+}
+
+.btn {
+    font-weight: 700;
+}
+
+p {
+    /* 首行缩进两个字 */
+    text-indent: 2em;
+}
+
+.pic {
+    /* 图片居中对齐 */
+    text-align: center;
+}
+
+.footer {
+    color: #888888;
+    text-align: center;
+
+}
