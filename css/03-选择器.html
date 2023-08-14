@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol li {
+            /* 符合选择器，后代选择器 */
+            color: pink;
+        }
+
+        .nav>a {
+            /* 子元素选择器，只选择亲儿子 */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <ul>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <div class="nav">
+        <a href="#">子选择器</a>
+
+        <p>
+            <a href="#">子选择器</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
