@@ -369,3 +369,16 @@ a {
     color: #333;
     font-size: 12px;
 }
+
+.fix {
+    width: 100px;
+    height: 500px;
+}
+
+.fix img {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    width: 100px;
+
+}
