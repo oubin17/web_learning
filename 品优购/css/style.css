@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* css3盒子模型，不会撑大盒子 */
+    box-sizing: border-box;
+}
+
+a {
+    /* 去除下划线 */
+    text-decoration: none;
+    color: #050505;
+}
+
+a:hover {
+    color: crimson;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id  */
+  src: url('iconfont.ttf?t=1696951702481') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 在内容后面添加 */
+.iconfont::after {
+  content: '\e67d';
+}
+
+.icon-xiala:before {
+  content: "\e67d";
+}
