@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* css3盒子模型，不会撑大盒子 */
+    /* css3盒子模型，不会撑大盒子 important */
     box-sizing: border-box;
 }
 

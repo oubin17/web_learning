@@ -1,7 +1,9 @@
 @font-face {
   font-family: "iconfont";
-  /* Project id  */
-  src: url('iconfont.ttf?t=1696951702481') format('truetype');
+  /* Project id 4284488 */
+  src: url('iconfont.woff2?t=1697115633203') format('woff2'),
+    url('iconfont.woff?t=1697115633203') format('woff'),
+    url('iconfont.ttf?t=1697115633203') format('truetype');
 }
 
 .iconfont {
@@ -12,9 +14,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 在内容后面添加 */
-.iconfont::after {
-  content: '\e67d';
+.icon-gouwuchekong:before {
+  content: "\e600";
+}
+
+.icon-xiangyoujiantou:before {
+  content: "\e65f";
 }
 
 .icon-xiala:before {

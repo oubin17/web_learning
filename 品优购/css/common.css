@@ -4,6 +4,13 @@
     margin: 0 auto;
 }
 
+button,
+input {
+    /* 默认有灰色边框 */
+    border: 0;
+    outline: none;
+}
+
 .shortcut {
     height: 31px;
     line-height: 31px;
@@ -26,9 +33,234 @@
     color: red;
 }
 
+/* 选择所有偶数的li */
 .shortcut .fr ul li:nth-child(even) {
     width: 1px;
     height: 12px;
     background-color: #666;
     margin: 9px 15px 0;
+}
+
+/* 在内容后面添加 */
+.down::after {
+    font-family: "iconfont";
+    content: '\e67d';
+}
+
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: skyblue; */
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+    /* background-color: bisque; */
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    /* 隐藏文字 */
+    font-size: 0;
+    /* text-indent: -999px;
+    overflow: hidden; */
+    background: url(../images/logo.png) no-repeat;
+    /* 调整背景图片大小 */
+    background-size: 100%;
+
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+
+}
+
+.search input {
+    /* 行内块元素之间有缝隙，加个浮动，无间隙 */
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b1191a;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f1f1f1;
+}
+
+.shopcar::before {
+    font-family: "iconfont";
+    content: "\e600";
+    margin-right: 10px;
+}
+
+.shopcar::after {
+    font-family: "iconfont";
+    content: "\e65f";
+    margin-left: 5px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    /* 继承行高，需要手动指定 */
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.dropdown .dd {
+    display: none;
+    margin-top: 2px;
+    width: 210px;
+    height: 465px;
+    background-color: #b1191a;
+}
+
+.dropdown .dd ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+
+}
+
+.dropdown .dd ul li:hover a {
+    color: #b1191a;
+
+}
+
+.dropdown .dd ul li::after {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    columns: #fff;
+    font-family: "iconfont";
+    content: "\e65f";
+    color: #fff;
+    font-size: 8px;
+
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    display: block;
+    float: left;
+    width: 300px;
+    height: 50px;
+    background-color: skyblue;
+    padding-left: 35px;
+}
+
+.mod_service ul li h5 {
+
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    margin-right: 8px;
+}
+
+
+.service_txt h4 {
+    font-size: 14px;
+}
+
+.service_txt p {
+    font-size: 12px;
 }
