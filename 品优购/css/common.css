@@ -172,7 +172,7 @@ input {
 }
 
 .dropdown .dd {
-    display: none;
+    /* display: none; */
     margin-top: 2px;
     width: 210px;
     height: 465px;
@@ -243,16 +243,16 @@ input {
     float: left;
     width: 300px;
     height: 50px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     padding-left: 35px;
 }
 
 .mod_service ul li h5 {
-
     float: left;
     width: 50px;
     height: 50px;
-    background-color: pink;
+    /* background-color: pink; */
+    background: url(../images/精灵图.png) no-repeat -112px -118px;
     margin-right: 8px;
 }
 
@@ -263,4 +263,46 @@ input {
 
 .service_txt p {
     font-size: 12px;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_help dl dd {
+    font-size: 12px;
+
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.copyright {
+    line-height: 20px;
+    /* text-align: center; */
 }
