@@ -43,7 +43,102 @@ header {
 }
 
 .reg_form {
-    width: 600px;
-    background-color: #c81523;
+    width: 620px;
+    /* background-color: skyblue; */
     margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.reg_form ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    margin-left: 10px;
+    color: #c81523;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    /* 文字和图片垂直居中 */
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+}
+
+.error_icon {
+    background-color: aqua;
+}
+
+.success_icon {
+    background-color: bisque;
+}
+
+.safe {
+    padding-left: 160px;
+}
+
+.safe em {
+    padding: 0 12px;
+    /* background-color: #fff; */
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: #40b83f;
+}
+
+.qiang {
+    background-color: #f79100;
+}
+
+.agree {
+    padding-left: 110px;
+}
+
+.agree input {
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    background-color: #c81523;
+    font-size: 14px;
+    color: #fff;
+    margin: 30px 0 0 10px
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.copyright {
+    line-height: 20px;
+    /* text-align: center; */
 }
