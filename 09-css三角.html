@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rec div {
+            position: relative;
+            width: 250px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+
+        .rec div::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            right: 15px;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            /* 旋转 */
+            transform: rotate(45deg);
+            /* 动画效果，多少秒做完 */
+            transition: all 0.4s;
+
+        }
+
+        .rec div:hover::after {
+            transform: rotate(225deg);
+        }
+
+        .center div {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: skyblue;
+            /* 动画效果，多少秒做完 */
+            transition: all 1s;
+            /* 设置旋转中心点 */
+            transform-origin: left bottom;
+        }
+
+        /* 切记是给谁加hover，这里需要加上div，如果不加div，是给父级加hover，父级并没有格式 */
+        .center div:hover {
+            transform: rotate(360deg) scale(2, 2);
+            /* 放大，缩放，不会影响其他盒子 */
+            /* transform: scale(2, 2); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rec">
+        <div></div>
+    </div>
+    <div class="center">
+        <div></div>
+    </div>
+</body>
+
+</html>
