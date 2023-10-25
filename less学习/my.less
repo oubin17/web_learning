@@ -1,0 +1,41 @@
+@color: pink;
+@font14: 14px;
+
+// body {
+//     background-color: @color;
+// }
+
+// div {
+//     color: @color;
+//     font-size: @font14;
+// }
+
+// a {
+//     font-size: @font14;
+// }
+
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+
+    // 1.子元素的样式直接写到父元素里面
+    a {
+        color: red;
+
+        // 2.伪类选择器，需要添加&，如果不添加，默认是后代选择器
+        &:hover {
+            color: blue;
+        }
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+
+    &::before {
+        content: "";
+    }
+}

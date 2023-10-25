@@ -1,0 +1,20 @@
+// 可以进行加减乘除运算
+// 1.运算符用空格隔开 2.以最后一个有单位为准，如果两个数都有单位，并且单位不一样，以前一个单位为准 
+@border: 5px + 5;
+@baseFont: 50px;
+
+html {
+    font-size: @baseFont;
+}
+
+div {
+    width: 200px - 50;
+    height: 200px * 2;
+    border: @border solid red;
+    background-color: #444;
+}
+
+img {
+    width: 82rem / @baseFont;
+    height: 40rem / @baseFont;
+}

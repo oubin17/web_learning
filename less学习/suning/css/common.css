@@ -1,0 +1,32 @@
+html {
+  font-size: 50px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  /* css3盒子模型，不会撑大盒子 important */
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
