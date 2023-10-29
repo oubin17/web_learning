@@ -1,0 +1,176 @@
+// 声明标准值，vm表示视图的百分之一
+@import url(base.less);
+// 这里用vw和vmin的区别在于vmin是横屏和竖屏去最小值
+@baseSize: 3.9vw;
+
+.suspension {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // 都是固定定位，后面的会盖住前面的，需要强制指定优先级  
+    z-index: 1;
+    background-color: #fff;
+
+    .m-navbar {
+        padding: 0 (12 / @baseSize) 0 (18 / @baseSize);
+        height: (44 / @baseSize);
+
+        display: flex;
+        // 在每行上均匀分配弹性元素。相邻元素间距离相同。每行第一个元素与行首对齐，每行最后一个元素与行尾对齐。
+        justify-content: space-between;
+        // 侧轴垂直居中
+        align-items: center;
+
+        .logo {
+            i {
+                font-size: (28 / @baseSize);
+                color: #fb7299;
+            }
+        }
+
+        .right {
+            // 默认主轴排列，不需要加浮动
+            display: flex;
+
+            .search {
+                color: #ccc;
+
+                i {
+                    font-size: (22 / @baseSize);
+                }
+
+            }
+
+            .face {
+                width: (24 / @baseSize);
+                height: (24 / @baseSize);
+                // 圆角边框，溢出隐藏
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 (20 / @baseSize);
+            }
+
+            .app-btn {
+                width: (72 / @baseSize);
+                height: (24 / @baseSize);
+            }
+        }
+    }
+
+    // 频道模块
+    .channel-menu {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: (40 / @baseSize);
+        border-bottom: 1px solid #e7e7e7;
+
+        .tabs {
+            overflow: hidden;
+            flex: 1;
+
+            .tabs-list {
+                // 所有孩子不会换行，一行内显示
+                display: flex;
+
+                a {
+                    padding: 0 (16 / @baseSize);
+                    // 不需要文字换行
+                    white-space: nowrap;
+                    font-size: (14 / @baseSize);
+                    height: (40 / @baseSize);
+                    line-height: (40 / @baseSize);
+                }
+
+                .line {
+                    position: absolute;
+                    left: (16 / @baseSize);
+                    bottom: 0;
+                    width: (28 / @baseSize);
+                    height: (2 / @baseSize);
+                    background-color: #fb7299;
+                }
+            }
+        }
+
+        .after {
+            position: relative;
+            width: (39 /@baseSize);
+            height: (39 /@baseSize);
+            text-align: center;
+            line-height: (39 /@baseSize);
+            background-color: #fff;
+            color: #ccc;
+
+            i {
+                font-size: (20 / @baseSize);
+            }
+
+
+        }
+    }
+}
+
+.m-home {
+    padding: (85 / @baseSize) (5 / @baseSize) 0;
+
+    .video-list {
+        display: flex;
+        // 让弹性盒子换行
+        flex-wrap: wrap;
+
+        .video-item {
+            width: 50%;
+            // height: 150px;
+            // background-color: pink;
+            padding: (8 / @baseSize) (5 / @baseSize);
+
+            .card {
+                position: relative;
+                height: (97 / @baseSize);
+
+                .count {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: (27 / @baseSize);
+                    padding: 0 (5 / @baseSize);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: (12 / @baseSize);
+                    color: #fff;
+                    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .5));
+                }
+            }
+
+            .title {
+                margin-top: (5 / @baseSize);
+                font-size: (12 / @baseSize);
+            }
+        }
+    }
+
+}
+
+// 底部模块
+.app {
+    position: fixed;
+    left: 0;
+    bottom: (30 / @baseSize);
+    width: 100%;
+    height: (38 / @baseSize);
+
+    .btn-app {
+        margin: 0 (20 / @baseSize);
+        height: (38 / @baseSize);
+        border-radius: (19 / @baseSize);
+        text-align: center;
+        line-height: (38 / @baseSize);
+        color: #fff;
+        background-color: #fb7299;
+    }
+}
